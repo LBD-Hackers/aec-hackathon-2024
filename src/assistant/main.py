@@ -9,12 +9,10 @@ from .helpers.qa_chain import get_qa_chain
 from chromadb.utils import embedding_functions
 
 PYTHON_ENV = os.getenv("PYTHON_ENV", "development")
-FIREBASE_KEY_PATH = os.getenv("FIREBASE_KEY_PATH", "./key.json")
 DATA_DIR = os.getenv("DATA_DIR", "/data")
 
 credential = credentials.Certificate(FIREBASE_KEY_PATH)
 initialize_app(credential)
-
 
 # INIT CHROMA DB CLIENT
 chroma_client = chromadb.PersistentClient(path=DATA_DIR)
