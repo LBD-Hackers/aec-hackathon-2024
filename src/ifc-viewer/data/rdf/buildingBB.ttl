@@ -1,13 +1,22 @@
 @prefix schema: <http://schema.org/> .
 @prefix bot: <https://w3id.org/bot#> .
 @prefix se: <https://sparenergi.dk/schema#> .
+@prefix rec: <https://w3id.org/rec/core/> .
 @prefix sev: <https://sparenergi.dk/vocab/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
 
-<http://example.com/buildings/AA> a bot:Building , schema:Place ;
-    schema:name "BLOX" ;
-    schema:geo <http://example.com/buildings/AA/geo>
+<http://example.com/buildings/BB> a bot:Building , schema:Place , rec:Building ;
+    schema:name "Ulrikkenborg Plads 1" ;
+    schema:address <http://example.com/buildings/BB/address> ;
+    schema:geo <http://example.com/buildings/BB/geo> ;
     se:hasEnergyLabel sev:EnergyLabelC .
 
-<http://example.com/buildings/AA/geo>
-    schema:latitude 55.6720447 ;
-    schema:longitude 12.575995 .
+<http://example.com/buildings/BB/address> a schema:PostalAddress ;
+    schema:addressCountry dbr:Denmark ;
+    schema:postalCode "2800" ;
+    schema:streetAddress "Ulrikkenborg Plads 1" .
+
+
+<http://example.com/buildings/BB/geo>
+    schema:latitude 55.7676765 ;
+    schema:longitude 12.4998316 .
