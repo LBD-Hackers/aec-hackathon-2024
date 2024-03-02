@@ -1,0 +1,13 @@
+@prefix schema: <http://schema.org/> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix se: <https://sparenergi.dk/schema#> .
+@prefix sev: <https://sparenergi.dk/vocab/> .
+
+<http://example.com/buildings/AA> a bot:Building , schema:Place ;
+    schema:name "BLOX" ;
+    schema:geo <http://example.com/buildings/AA/geo>
+    se:hasEnergyLabel sev:EnergyLabelC .
+
+<http://example.com/buildings/AA/geo>
+    schema:latitude 55.6720447 ;
+    schema:longitude 12.575995 .

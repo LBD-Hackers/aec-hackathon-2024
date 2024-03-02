@@ -1,0 +1,19 @@
+@prefix sev: <https://sparenergi.dk/vocab/> .
+@prefix se: <https://sparenergi.dk/schema#> .
+
+# SPECIFIC ENERGY LABELS
+sev:EnergyLabelA a se:EnergyLabel ;
+    rdfs:label "Energimærke A"@da , "Energy label A"@en .
+sev:EnergyLabelB a se:EnergyLabel ;
+    rdfs:label "Energimærke B"@da , "Energy label B"@en .
+sev:EnergyLabelC a se:EnergyLabel ;
+    rdfs:label "Energimærke C"@da , "Energy label C"@en .
+sev:EnergyLabelD a se:EnergyLabel ;
+    rdfs:label "Energimærke D"@da , "Energy label D"@en .
+sev:EnergyLabelE a se:EnergyLabel ;
+    rdfs:label "Energimærke E"@da , "Energy label E"@en .
+sev:EnergyLabelF a se:EnergyLabel ;
+    rdfs:label "Energimærke F"@da , "Energy label F"@en .
+sev:EnergyLabelG a se:EnergyLabel ;
+    rdfs:label "Energimærke G"@da , "Energy label G"@en .
+
