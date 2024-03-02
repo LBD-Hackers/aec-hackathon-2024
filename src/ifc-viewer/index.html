@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewer test</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./app-styles.css">
+    <style>
+      body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #btns{
+        display: none;
+      }
+      #app{
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" style="width: 60vw; height: 60vh;"></div>
+    <div id="btns">
+      <button id="show-windows">Show windows</button>
+      <button id="show-walls">Show walls</button>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

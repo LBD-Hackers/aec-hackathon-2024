@@ -1,0 +1,23 @@
+{
+    "name": "ifc-viewer",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "tauri": "tauri"
+    },
+    "devDependencies": {
+        "@types/three": "^0.156.0",
+        "typescript": "^5.0.2",
+        "vite": "^4.4.5"
+    },
+    "dependencies": {
+        "async-oxigraph": "^0.0.6",
+        "bim-fragment": "1.0.25",
+        "openbim-components": "1.1.9",
+        "three": "0.152.2",
+        "tsee": "^1.3.4",
+        "web-ifc": "^0.0.46"
+    }
+}
